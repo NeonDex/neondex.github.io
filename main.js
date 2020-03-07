@@ -1,14 +1,14 @@
 var objPeople = [
 {
-	username: "Joshua"
+	username: "Joshua",
 	password: "123456"
 },
 {
-	username: "Patrick"
+	username: "Patrick",
 	password: "thestar"
 },
 {
-	username: "Eucogco"
+	username: "Eucogco",
 	password: "1234567"
 	},
 ]
@@ -19,8 +19,13 @@ function getInfo() {
 	for (i = 0; i < objPeople.length; i++) {
 		if(username == objPeople[i].username && password == objPeople[i].password) 
 		{
-	console.log(username + "is logged in!!!")
+		alert(username + "is logged in!!!")
+		return true;
+		}
+		else
+		{
+		alert("Incorrect username or password")
+		return false;
+		}
 	}
-	else
-{console.log("Incorrect username or password")
 }
